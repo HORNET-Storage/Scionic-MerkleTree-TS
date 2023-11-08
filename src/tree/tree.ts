@@ -1,18 +1,18 @@
 import MerkleTools from 'merkle-tools';
 
-type TreeContent = {
+export type TreeContent = {
     leafs: Record<string, string>;
 };
 
-const createTree = (): TreeContent => {
+export const createTree = (): TreeContent => {
     return { leafs: {} };
 };
 
-const addLeaf = (tc: TreeContent, key: string, data: string): void => {
+export const addLeaf = (tc: TreeContent, key: string, data: string): void => {
     tc.leafs[key] = data;
 };
 
-const build = (tc: TreeContent): MerkleTools => {
+export const buildTree = (tc: TreeContent): MerkleTools => {
     const merkleTools = new MerkleTools({ hashType: 'SHA256' });
 
     const sortedKeys = Object.keys(tc.leafs).sort();
@@ -23,7 +23,7 @@ const build = (tc: TreeContent): MerkleTools => {
     return merkleTools;
 };
 
-const verifyTree = (tree: MerkleTools): boolean => {
+export const verifyTree = (tree: MerkleTools): boolean => {
     const root = tree.getMerkleRoot();
     const leafCount = tree.getLeafCount();
     let result = true;
