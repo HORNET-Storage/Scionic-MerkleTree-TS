@@ -4,7 +4,7 @@
 
 We've designed a new type of Merkle Tree/DAG. Scionic Merkle Trees have small branches like Classic Merkle trees, the file storage ability of Merkle DAGs, and numbered leaves so relays can request a range of missing leaf numbers to sync quickly. They are an innovative model that merge the advantages of Classic Merkle trees and Merkle DAGs while addressing several of their limitations.
 
-![Tree Comparison Diagram](https://i.ibb.co/5LGmSqm/Tree-Comparison-Diagram.png)
+![Tree Comparison Diagram](https://static.wixstatic.com/media/e9326a_b761315944af43f993b01b00b2ac11b5~mv2.png/v1/fill/w_1718,h_431,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/Comparsion_Diagram_Yellow.png)
 
 ## Classic Merkle Trees and Merkle DAGs: A Comparison
 
