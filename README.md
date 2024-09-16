@@ -6,7 +6,7 @@
 
 ## Combining Merkle DAGs and Merkle Trees
 
-We've designed a [new type of Merkle DAG-Tree hybrid](https://www.hornetstorage.com/dag-trees). Scionic Merkle Trees have small branches like Classic Merkle Trees, the file/folder storage ability of Merkle DAGs, and numbered leaves so relays can request a range of missing leaf numbers to sync quickly. They are an innovative model that merge the advantages of Classic Merkle Trees and Merkle DAGs while addressing several of their limitations.
+We've designed a [new type of Merkle DAG/Merkle Tree hybrid](https://www.hornet.storage/) known as the Scionic Merkle Tree. Scionic Merkle Trees contain small branches like Classic Merkle Trees, the folder storage support of Merkle DAGs, and numbered Merkle leaves so anyone can sync by requesting a range of missing leaf numbers that correspond to missing file chunks. LeafSync is the name of the simple protocol used to request a range of leaf numbers in order to retrieve a batch of missing file chunks corresponding to the leaf numbers.
 
 In plant grafting, the scion is the upper part of the plant, chosen for its desirable fruits or flowers. It's grafted onto another plant's base to grow together. In a similar vein, the Scionic Merkle DAG-Tree was born from grafting together Merkle DAGs and Classic Merkle Trees. This process emphasizes why we use the term "scion" for the Scionic Merkle DAG-Trees… it symbolizes the digital grafting of these two similar data structures, combining their strengths into one piece.
 
